@@ -17,7 +17,7 @@ with optional transformations applied per column.
 
 - Object-Oriented Approach: each transformation is a class (polymorphism, modular, extendable)  
 - Assumptions: Since it was not specified, I assume the provided input.csv is already clean. Therefore, the data was not inspected for missing values, duplicate removal, normalization, or other preprocessing steps.  
-- Scalability: The project was developed using Python built-in tools for CSV manipulations. For larger datasets (e.g., ~1 million rows), it would be necessary to use more appropriate tools like Pandas. For even larger datasets, a more robust solution such as Spark is recommended.
+- Scalability: The project was developed using Python built-in tools for CSV manipulations. For larger datasets (e.g., ~1 million rows), it would be necessary to use more appropriate tools like Pandas which is optimized for memory and supports vectorized operations. For even larger datasets, a more robust solution such as Spark is recommended since its distributed, can handle datasets larger than memory, and automatically utilizes all available cores.
 The code is already structured to support Pandas or Spark: it is enough to implement the reading and writing operations in csv_handler_pandas.py or csv_handler_pyspark.py and make minimal adjustments inside each transformation’s apply method (e.g., src/transformations/info_redactor.py, line 28).
 
 ---

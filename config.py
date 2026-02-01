@@ -17,7 +17,8 @@ METADATA = {
                                   "email_address",
                                   "start_date",
                                   "last_login",
-                                  "user_id"
+                                  "user_id",
+                                  "name"
                                 ],
               "transformations":[
                                   { "type": "UUIDMapper", "column": "user_id" },
