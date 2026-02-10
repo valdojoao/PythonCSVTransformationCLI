@@ -62,7 +62,7 @@ project_root/
 
 ### Data Flow Diagram:
 
-Input CSV => CSV Handler (builtin / pandas / spark) => (Transformations per column UUIDMapper, InfoRedactor, DateFormatter) => Output CSV
+Input CSV => CSV Handler(builtin/pandas/spark) => (Transformations per column UUIDMapper, InfoRedactor, DateFormatter) => Output CSV
 
 
 ## CLI Arguments
