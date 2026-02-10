@@ -1,4 +1,5 @@
 # Python CSV Transformation CLI
+For this project, I’ve decided to build it the old-school way: no AI tools and no static tooling configured (Ruff, Mypy, Black, pre-commit hooks). Just pure code. Even though I use these tools in my daily work, I’m doing this as an exercise—to avoid becoming overly dependent on modern AI tooling and automated toolchains.
 
 ## Project Overview
 This project is a Python command-line application that transforms an input CSV into a new CSV 
@@ -140,13 +141,6 @@ pytest ./test/
 
 ---
 
-## AI Disclosure
-
-AI tools were used to:  
-- Enforce type hints eg. def read(self, path **: str) -> List[Dict[str, Any]]:**   
-- Double check my time and space complexity assumptions  
-- Check that all specified requirements are covered by the test units. 
-- Review and polish this README
 
 
 ---
